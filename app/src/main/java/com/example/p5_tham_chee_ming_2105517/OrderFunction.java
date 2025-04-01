@@ -155,7 +155,7 @@ public class OrderFunction {
                 slot.setText(String.valueOf(number));
                 slot.setTag(number);
                 userOrder.add(number);
-                button.setAlpha(0.5f);
+                button.setBackgroundResource(R.drawable.custom_button2);
                 button.setTag(slot);
                 button.setOnClickListener(v -> undoSelection(activity, number, button));
                 break;
@@ -175,7 +175,7 @@ public class OrderFunction {
             slot.setTag("empty");
             userOrder.remove((Integer) number);
 
-            button.setAlpha(1.0f);
+            button.setBackgroundResource(R.drawable.custom_button);
 
             button.setOnClickListener(v -> handleNumberSelection(activity, number, button, activity.findViewById(R.id.game_container1)));
         }

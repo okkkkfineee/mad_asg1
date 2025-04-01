@@ -162,7 +162,7 @@ public class ComposeFunction {
     private static void handleNumberSelection(Activity activity, int number, Button button) {
         if (selectedNumbers.size() < 2) {
             selectedNumbers.add(number);
-            button.setAlpha(0.5f);
+            button.setBackgroundResource(R.drawable.custom_button2);
             button.setOnClickListener(v -> undoSelection(activity, number, button));
 
             // If two buttons is selected
@@ -174,7 +174,7 @@ public class ComposeFunction {
 
     private static void undoSelection(Activity activity, int number, Button button) {
         selectedNumbers.remove((Integer) number);
-        button.setAlpha(1.0f);
+        button.setBackgroundResource(R.drawable.custom_button);
         button.setOnClickListener(v -> handleNumberSelection(activity, number, button));
     }
 
