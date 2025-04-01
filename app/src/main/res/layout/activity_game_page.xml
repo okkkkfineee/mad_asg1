@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    tools:context=".GamePage">
+
+    <ImageButton
+        android:id="@+id/imgbutton_exit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:tint="#FFFFFF"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/imgbutton_help"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_button"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitCenter"
+            app:tint="#FFFFFF"
+            android:src="@android:drawable/ic_menu_help" />
+
+        <ImageButton
+            android:id="@+id/imgbutton_sound"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_button"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:tint="#FFFFFF"
+            android:src="@drawable/icon_speaker" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gamemode_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:textSize="35sp"
+        style="@style/white_txt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/heart_n_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gamemode_selected"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/round_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            style="@style/white_txt"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/heart_remaining"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"
+            style="@style/white_txt"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/game_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heart_n_round"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        style="@style/white_txt"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/game_container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_instruction"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_container1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+    </LinearLayout>
+</RelativeLayout>
