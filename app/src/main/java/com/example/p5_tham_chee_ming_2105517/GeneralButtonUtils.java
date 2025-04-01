@@ -2,7 +2,6 @@ package com.example.p5_tham_chee_ming_2105517;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.media.MediaPlayer;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
