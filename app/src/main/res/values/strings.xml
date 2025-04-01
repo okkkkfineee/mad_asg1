@@ -1,0 +1,37 @@
+<resources>
+    <string name="loading">Learning Math…</string>
+    <string name="app_name">Let\'s Learn Number</string>
+    <string name="gamemode_1">Compare</string>
+    <string name="gamemode_2">Order</string>
+    <string name="gamemode_3">Compose</string>
+    <string name="difficulty_1">Easy</string>
+    <string name="difficulty_2">Normal</string>
+    <string name="difficulty_3">Hard</string>
+    <string name="select_dialog">Select Difficulty:</string>
+    <string name="game_instructions">
+        🔹 Compare Numbers\n
+        Objective: \n
+        - Choose the larger or smaller number based on the question.\n
+        How to Play:\n
+        - Select the correct number when asked if it\'s larger or smaller.\n
+        \n
+        🔹 Ordering Numbers\n
+        Objective: \n
+        - Arrange the numbers in ascending or descending order.\n
+        How to Play:\n
+        - Rearrange the numbers based on the order requested.\n
+        \n
+        🔹 Composing Numbers\n
+        Objective: \n
+        - Build a number using two smaller numbers.\n
+        How to Play:\n
+        - Choose the two numbers that add up to the target number.\n
+        \n
+        Difficulty Settings:\n
+        - Easy: 10 rounds, 5 hearts\n
+        - Normal: 10 rounds, 3 hearts\n
+        - Hard: 10 rounds, 1 heart
+    </string>
+
+    <string name="result_page_title">Your Score</string>
+</resources>
