@@ -27,6 +27,8 @@ public class OrderFunction {
     private static int correctAnswers = 0;
     private static String orderType;
     private static HeartFunction heartFunction;
+    private static LinearLayout gameContainer1;
+    private static LinearLayout gameContainer2;
     private static String gameMode;
     private static String diffSelected;
     private static List<Integer> userOrder;
@@ -53,8 +55,8 @@ public class OrderFunction {
         userOrder = new ArrayList<>();
         numberButtons = new ArrayList<>();
 
-        LinearLayout gameContainer1 = activity.findViewById(R.id.game_container1);
-        LinearLayout gameContainer2 = activity.findViewById(R.id.game_container2);
+        gameContainer1 = activity.findViewById(R.id.game_container1);
+        gameContainer2 = activity.findViewById(R.id.game_container2);
         gameContainer1.removeAllViews();
         gameContainer2.removeAllViews();
 
@@ -183,7 +185,17 @@ public class OrderFunction {
 
     private static void checkAnswer(Activity activity) {
         boolean isCorrect = userOrder.equals(correctOrder);
-
+        for (int i = 0; i < gameContainer1.getChildCount(); i++) {
+            LinearLayout textRow = (LinearLayout) gameContainer1.getChildAt(i);
+            for (int j = 0; j < textRow.getChildCount(); j++) {
+                TextView tv = (TextView) textRow.getChildAt(j);
+                if (isCorrect) {
+                    tv.setBackgroundColor(Color.GREEN);
+                } else {
+                    tv.setBackgroundColor(Color.RED);
+                }
+            }
+        }
         if (isCorrect) {
             Toast.makeText(activity, "Correct!", Toast.LENGTH_SHORT).show();
             correctAnswers++;
