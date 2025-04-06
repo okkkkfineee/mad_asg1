@@ -55,6 +55,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         style="@style/white_txt"
+        android:textStyle="bold"
         android:layout_below="@id/txt_result"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="75dp"/>
@@ -65,6 +66,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         style="@style/white_txt"
+        android:textStyle="bold"
         android:layout_below="@id/txt_score"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
@@ -75,6 +77,7 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         style="@style/white_txt"
+        android:textStyle="bold"
         android:layout_below="@id/txt_heart"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
